@@ -1,0 +1,365 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-e6192f220486a48769c5b888b6eb7e057d629e1d7d3eb7752b048540fb01981db446f719ca923ee15b26f5b7f7d3e8f6829dcc4aabf20aa5038d31a5fb571e5a",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'sb'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  imports: [RouterOutlet],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.css'\r\n})\r\nexport class AppComponent {\r\n  title = 'sb';\r\n}\r\n",
+            "styleUrl": "./app.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<h1 class=\"text-3xl font-bold underline\">\r\n  Hello world!\r\n</h1>\r\n"
+        },
+        {
+            "name": "ButtonsComponent",
+            "id": "component-ButtonsComponent-2a3a2452c07eb9bb8fe0ac14e21e2dee57c305e50e56f653939a285da153a128c1b60f1de3d646e95cd619fcd92d2f9eac62b71b7b75080b2f9e390ce93c8741",
+            "file": "src/app/stories/buttons/buttons.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "Buttons",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./buttons.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 35,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "loading",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "loadingText",
+                    "defaultValue": "'Loading'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "outline",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "\"default\" | \"neutral\" | \"primary\" | \"secondary\" | \"accent\" | \"ghost\" | \"link\"",
+                    "decorators": []
+                },
+                {
+                    "name": "wide",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nOptional click handler",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 38,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "NgClass"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, EventEmitter, Input, Output} from '@angular/core';\r\nimport {NgClass} from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'Buttons',\r\n  imports: [\r\n    NgClass\r\n  ],\r\n  templateUrl: './buttons.component.html',\r\n  styleUrl: './buttons.component.css'\r\n})\r\nexport class ButtonsComponent {\r\n  @Input()\r\n  type:'default'|'neutral'|'primary'|'secondary'|'accent'|'ghost' |'link' = 'default';\r\n\r\n  @Input()\r\n  size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  @Input()\r\n  disabled: boolean = false;\r\n\r\n  @Input()\r\n  outline: boolean = false;\r\n\r\n  @Input()\r\n  loading: boolean = false;\r\n\r\n  @Input()\r\n  loadingText: string = 'Loading';\r\n\r\n  @Input()\r\n  wide: boolean = false;\r\n\r\n  @Input()\r\n  label = 'Button';\r\n  /** Optional click handler */\r\n  @Output()\r\n  onClick = new EventEmitter<Event>();\r\n\r\n  public get classes(): string[] {\r\n    const outline = this.outline ? 'outline' : '';\r\n    const wide = this.wide ? 'wide' : '';\r\n    const disabled = this.disabled ? 'disabled' : '';\r\n    const loading = this.loading ? 'disabled' : '';\r\n    return ['button',this.size,outline,wide,`${this.type}`,disabled,loading];\r\n  }\r\n}\r\n",
+            "styleUrl": "./buttons.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 40
+                    }
+                }
+            },
+            "templateData": "<button\r\n  (click)=\"onClick.emit($event)\"\r\n  [ngClass]=\"classes\"\r\n>\r\n\r\n  @if (loading){\r\n    <span class=\"loadingStyle\"></span>\r\n    {{loadingText}}\r\n  } @else {\r\n    {{label}}\r\n  }\r\n\r\n</button>\r\n"
+        },
+        {
+            "name": "CardsComponent",
+            "id": "component-CardsComponent-4b83d65f616f2d57030df3fcaadd7b3c880116a2765335dc5b2c886c9b534a8dce4a8194f4cd933e2170a44b5c95730aa710136b2deac2b14568f3d9214b157e",
+            "file": "src/app/stories/cards/cards.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "CARDS",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./cards.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "btnLabel",
+                    "defaultValue": "'Click'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "content",
+                    "defaultValue": "'Content'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "header",
+                    "defaultValue": "'Header'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imgAlt",
+                    "defaultValue": "'Image Alt'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imgSrc",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'CARDS',\r\n  imports: [],\r\n  templateUrl: './cards.component.html',\r\n  styleUrl: './cards.component.css'\r\n})\r\nexport class CardsComponent {\r\n  @Input()\r\n  imgSrc: string='';\r\n  @Input()\r\n  imgAlt: string='Image Alt';\r\n  @Input()\r\n  header: string='Header';\r\n  @Input()\r\n  content: string='Content';\r\n  @Input()\r\n  btnLabel: string='Click';\r\n}\r\n",
+            "styleUrl": "./cards.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"card card-side bg-base-100 shadow-xl\">\r\n  <figure>\r\n    <img\r\n      [src]=\"imgSrc\"\r\n      [alt]=\"imgAlt\" />\r\n  </figure>\r\n  <div class=\"card-body\">\r\n    <h2 class=\"card-title\">{{header}}</h2>\r\n    <p>{{content}}</p>\r\n    <div class=\"card-actions justify-end\">\r\n      <button class=\"btn btn-primary\">{{btnLabel}}</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\r\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]\r\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\r\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]\r\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/stories/buttons/buttons.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonsComponent",
+                "coveragePercent": 10,
+                "coverageCount": "1/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/stories/cards/cards.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            }
+        ]
+    }
+}

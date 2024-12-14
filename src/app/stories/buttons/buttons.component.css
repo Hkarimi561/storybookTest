@@ -1,0 +1,47 @@
+.button{
+  @apply btn
+}
+
+.primary{
+  @apply btn-neutral
+}
+
+.primary{
+  @apply btn-primary
+}
+.secondary{
+  @apply btn-secondary
+}
+.accent{
+  @apply btn-accent
+}
+.ghost{
+  @apply btn-ghost
+}
+.link{
+  @apply btn-link
+}
+
+.outline {
+  @apply btn-outline
+}
+
+.small{
+  @apply btn-sm
+}
+.medium{
+}
+.large{
+  @apply btn-lg
+}
+.wide{
+  @apply btn-wide
+}
+
+.disabled{
+  @apply btn-disabled
+}
+
+.loadingStyle{
+  @apply loading loading-spinner
+}

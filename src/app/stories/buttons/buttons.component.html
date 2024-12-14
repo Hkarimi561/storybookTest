@@ -1,0 +1,13 @@
+<button
+  (click)="onClick.emit($event)"
+  [ngClass]="classes"
+>
+
+  @if (loading){
+    <span class="loadingStyle"></span>
+    {{loadingText}}
+  } @else {
+    {{label}}
+  }
+
+</button>
